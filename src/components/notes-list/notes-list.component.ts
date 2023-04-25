@@ -8,10 +8,11 @@ import { NoteComponent } from '../note/note.component';
   imports: [CommonModule, NoteComponent],
   templateUrl: './notes-list.component.html',
   styleUrls: ['./notes-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  inputs: ['notes'],
 })
 export class NotesListComponent {
-  @Input() notes: Note[] = [];
+  notes: Note[] = [];
 
   constructor(){
   }

@@ -9,8 +9,8 @@ import { Note } from '../notes-list/notes-list.component';
   imports: [CommonModule, StarRatingDirective, NgOptimizedImage],
   templateUrl: './note.component.html',
   styleUrls: ['./note.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
+  inputs: ['note'],
 })
 export class NoteComponent {
-  @Input() note!: Note;
+  note!: Note;
 }
